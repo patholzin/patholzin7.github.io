@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cuerpo {
+  font-family: inter, "Open Sans", "Noto Sans", "Roboto", "Droid Sans", sans-serif;
+  background-color: #f8f9fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+.barra-navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #5c309b;
+}
+
+.barra-navegacion ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.barra-navegacion a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+.barra-navegacion a:hover {
+  color: #3689e6;
+}
+
+.principal {
+  text-align: center;
+  padding: 60px 10px;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to bottom right,#472a83 0%, #a56ce3 100%);
+}
+
+.principal img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.principal h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.principal p {
+  color: white;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.boton {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #2970c2;
+}
+
+.documentacion {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 3rem 1rem;
+  background: white;
+}
+
+.tarjeta {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta h2 {
+  color: #3689e6;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta p {
+  color: #555;
+}
+
+.presentacion-aplicacion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: #eef4fa;
+  gap: 2rem;
+}
+
+.presentacion-aplicacion img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.presentacion-aplicacion h2 {
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.presentacion-aplicacion ul {
+  margin-left: 1.2rem;
+  color: #555;
+}
+
+.leer-mas {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #3689e6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.monetizacion {
+  padding: 4rem 2rem;
+  background: white;
+  text-align: center;
+}
+
+.monetizacion h2 {
+  margin-bottom: 2rem;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.banner {
+  background: #eef4fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.dividir {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3689e6;
+}
+
+.pie-pagina {
+  background: #fafafa;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.pie-pagina ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.pie-pagina a {
+  text-decoration: none;
+  color: #555;
+}
+
+.pie-pagina a:hover {
+  color: #3689e6;
+}

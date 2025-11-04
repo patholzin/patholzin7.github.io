@@ -1,0 +1,404 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #2b2b2b;
+    line-height: 1.6;
+}
+
+/* Barra Principal */
+.barra-navegacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; 
+    background-color: #64baff;
+    border-bottom: none;
+}
+
+.navegacion-izquierda {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+}
+
+/* Iconos */
+.iconos-navegacion{
+    cursor: pointer;
+    display: flex; 
+    gap: 30px;
+}
+
+.iconos-navegacion img {
+    height: 30px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.barra-navegacion ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.barra-navegacion a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.barra-navegacion a.activo,
+.barra-navegacion a:hover {
+    color: black;
+}
+
+.navegacion-derecha {
+    display: flex;
+    align-items: center; 
+}
+
+/* Barra Secundaria */
+.barra-navegacion-secundaria {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #333333;
+    padding: 10px 20px; 
+    border-bottom: none;
+    position: sticky;
+    top: 0; /* Indica que debe pegarse a 0 píxeles de la parte superior de la ventana */
+    z-index: 1000; /* Asegura que la barra siempre esté por encima de otros elementos al hacer scroll */
+}
+
+/* Estructura Secundaria */
+.navegacion-izquierda {
+    display: flex;
+    align-items: center;
+}
+
+.barra-navegacion-secundaria nav,
+.barra-navegacion-secundaria ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.barra-navegacion-secundaria ul {
+    gap: 25px;
+}
+
+.navegacion-derecha-secundaria {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos de Enlaces Secundarios */
+.barra-navegacion-secundaria a {
+    text-decoration: none;
+    color: #cccccc;
+    font-weight: 400;
+    transition: color 0.3s;
+    font-size: 14px; 
+}
+
+.navegacion-derecha-secundaria a {
+    font-weight: 700; 
+    color: #cccccc;
+}
+
+/*Color sombreado*/
+.barra-navegacion-secundaria a:hover,
+.navegacion-deregcha-secundaria a:hover {
+    color: rgb(142, 142, 142);
+}
+
+/* Contenido Principal */
+.contenido-principal, .contenido-secundario, .titulo-venta{
+    text-align: left; 
+    margin-top: 100px; 
+    max-width: 900px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.contenido-principal h1 {
+    color: #d4d4d4; 
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.contenido-principal p {
+    color: #d4d4d4; 
+    font-size: 20px;
+}
+
+.contenido-secundario h2 {
+    color: #d4d4d4; 
+    font-size: 35px;
+    margin-bottom: 1px;
+}
+
+.contenido-secundario p {
+    color: #d4d4d4; 
+    font-size: 15px;
+}
+
+/* 1. DISEÑO DE COLUMNAS (CSS Grid) */
+.minoristas-contenedor {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px; 
+    padding-top: 50px; 
+
+    max-width: 1000px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.minorista-tarjeta h3 {
+    color: #d4d4d4;
+    font-size: 24px; 
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: flex; 
+    align-items: center; 
+}
+
+/* Estilo para la flecha dentro del título */
+.minorista-tarjeta h3 .flecha-animada {
+    transition: transform 0.3s ease; /* Define la transición para que el movimiento sea suave */
+    margin-left: 8px; 
+}
+
+.minorista-tarjeta h3:hover {
+    color: #4dc2ff; 
+    cursor: pointer;
+}
+
+.minorista-tarjeta h3:hover .flecha-animada {
+    /* La propiedad 'transform: translateX(5px)' mueve la flecha 5px hacia la derecha */
+    transform: translateX(5px); 
+}
+
+/* Línea divisoria horizontal */
+.separador {
+    border: none;
+    border-top: 1px solid #444444; 
+    margin-bottom: 5px;
+}
+
+.minorista-tarjeta p {
+    color: #cccccc; 
+    font-size: 16px; 
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 8px; 
+}
+
+.contenido-secundario-pie {
+    max-width: 1000px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    padding-top: 40px; 
+    padding-left: 20px; 
+    padding-right: 20px;
+    /* Ajuste para mover el contenido secundario */
+    transform: translateX(28px);
+}
+
+.contenido-secundario-pie p {
+    color: #cccccc; 
+    font-size: 14px; 
+    line-height: 1.6;
+}
+
+/* GALERÍA DE PRODUCTOS (Venta Suéter)  */
+
+.seccion-venta{
+    /* Ajuste para centrar correctamente */
+    max-width: 1000px; 
+    margin: 60px auto; 
+    padding: 0 20px; 
+}
+
+.titulo-venta{
+    margin-top: 30;
+    color: #cccccc; 
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px; 
+    text-align: left;
+    
+    /* Asegura que el título también esté dentro del ancho máximo de la sección */
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px; 
+}
+
+/* Configuración de la Cuadrícula para las Imágenes */
+.venta{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px; 
+    
+    /* Centrar la cuadrícula */
+    max-width: 1000px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos de los ítems individuales de la imagen */
+.item-imagen {
+    text-align: center; 
+    border: none; 
+    
+    /* Mantenemos las transiciones para que los cambios sean suaves */
+    transition: 
+        box-shadow 0.3s ease, 
+        transform 0.3s ease,
+        background-color 0.3s ease, /* Transición para el color de fondo */
+        padding 0.3s ease,           /* Transición para el padding */
+        border-radius 0.3s ease;     /* Transición para el radio del borde */
+    transform: translateY(0); 
+    background-color: transparent; 
+    padding: 0;                    
+    border-radius: 0;              
+}
+.item-imagen:hover {
+    background-color: #242424; 
+    padding: 15px; 
+    border-radius: 5px; 
+
+    box-shadow: inset 0 0 30px 5px #333333;
+    
+    transform: translateY(-3px); 
+    cursor: pointer; 
+}
+.item-imagen img {
+    /* Ajuste del tamaño para el centrado más fuerte */
+    width: 80%; 
+    border-radius: .5em; 
+    padding: .5em; 
+    
+    display: block; 
+    margin: 0 auto;
+    height: auto; 
+}
+
+/* Estilo de la descripción debajo de la imagen (Nombre del producto) */
+.item-imagen .nombre-producto { 
+    color: #d4d4d4; 
+    font-weight: 700; 
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px; 
+    line-height: 1.2;
+}
+
+/* Estilo del precio debajo de la imagen */
+.item-imagen .precio-producto {
+    color: #cccccc; 
+    font-weight: 700; 
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 40px; 
+    font-size: 16px; 
+}
+
+
+/* 4. DISEÑO RESPONSIVO (MEDIA QUERY) */
+
+@media (max-width: 768px) {
+    /* La regla '@media' se usa para aplicar estilos solo cuando el ancho de la ventana es menor o igual a 768px.
+        Esto permite que las 3 columnas de minoristas se apilen en una sola vertical para móviles. */
+    .minoristas-contenedor {
+        grid-template-columns: 1fr; 
+    }
+
+    /* Agrega un poco de espacio entre las tarjetas apiladas */
+    .minorista-tarjeta {
+        margin-bottom: 30px; 
+    }
+    
+    /* Regla responsiva para la nueva galería de suéteres */
+    .venta{
+        grid-template-columns: 1fr; 
+    }
+    
+    /* Asegura que las imágenes en móvil no se vean demasiado pequeñas al 60% */
+    .item-imagen img {
+        width: 85%; 
+    }
+}
+.contenido-secundario-final{
+    color: #cccccc;
+    font-size: 20px;
+    text-align: left; 
+    margin-top: 100px; 
+    max-width: 900px; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+/* footer.css */
+
+/* Estilos de la barra final (Footer) */
+.barra-final {
+    display: flex;
+    width: 100%;
+    /* Distribuye el espacio entre los dos divs */
+    justify-content: space-between;
+    align-items: center;
+    /* Fondo oscuro, típico de un footer */
+    background-color: #333333;
+    /* Espaciado interno */
+    padding: 5px 20px;
+    border-top: 1px solid #444444; /* Puedes poner un borde superior si deseas */
+}
+
+/* Estilos para las secciones izquierda y derecha del footer */
+.final-izquierda,
+.final-derecha {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para la navegación y listas no ordenadas dentro del footer */
+.barra-final nav ul,
+.barra-final .final-derecha ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.barra-final ul {
+    gap: 20px;
+}
+
+/* Estilos base para todos los enlaces del footer */
+.barra-final a {
+    text-decoration: none;
+    color: #cccccc;
+    font-weight: 400;
+    transition: color 0.3s;
+    font-size: 12px;
+}
+
+/* Color sombreado (Hover) */
+.barra-final a:hover {
+    color: rgb(142, 142, 142);
+}

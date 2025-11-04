@@ -1,0 +1,839 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuInicio{    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menuInicio-logo{    
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+    width: 30px;
+    height: 30px;
+}
+
+.a-menuInicio{    
+    margin: 10px;
+    cursor: pointer;    
+    text-decoration: none;
+    color: #464646;
+}
+
+.menuInicio-logo{
+    margin: 10px;
+}
+
+.menuInicio-links{
+    flex-grow: 1;
+    text-align: right;    
+    cursor: pointer;    
+}
+
+.links-logo{
+    margin-left: 25px;
+}
+
+.titulo-inicial{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.elementary{
+    width: auto;
+    height: 70px;
+}
+
+.texto-inicial{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: #464646;
+}
+.section-showcase{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cp{     
+    z-index: -1;
+    height: 675px;
+    max-width: 100%;
+    margin: 0px 50px;
+}
+.ss{
+    padding-top: 15px;
+    border-radius: 5px;
+    margin-top: 0px;
+    position: absolute;
+    width: 935px;
+    height: 525px;
+}
+.pagar{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 150px;
+    margin-right: 25px;
+    color: #464646;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.btns{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+}
+.btn-precio{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-descargar{    
+    margin-left: 30px;    
+    padding: 10px 20px;
+    background-color: #2aa8fc;
+    border: none;
+    color: white;
+}
+.nuevo{
+    padding-top: 45px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-top: 50px;
+    color: #464646;
+    background-color: #f8f8f8;
+}
+.nuevo-h1{
+    padding-bottom: 25px;
+}
+.nuevo-p{
+    text-align: centerS;
+    margin-left: 320px;
+    margin-right: 320px;
+}
+/* ===== Sección principal ===== */
+#whats-new {
+  background: #f6f6f6;
+  padding: 80px 20px;
+  font-family: "Inter", system-ui, sans-serif;
+  text-align: center;
+}
+
+/* Títulos */
+#whats-new h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Párrafo intro */
+#whats-new p {
+  max-width: 750px;
+  margin: 0 auto 25px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Botón "Leer anuncio" */
+#whats-new .read-more {
+  display: inline-block;
+  background: #0078d7;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+#whats-new .read-more:hover {
+  background: #0064b8;
+}
+
+/* ===== Contenedor de las tarjetas del blog ===== */
+.blog-container {
+  margin-top: 60px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Tarjeta del blog */
+.blog-container .featured {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.blog-container .featured:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Imagen destacada */
+.blog-container .featured-image {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header dentro de la tarjeta */
+.blog-container header {
+  padding: 18px 20px 20px;
+  text-align: left;
+}
+
+/* Título blog */
+.blog-container h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+/* Subtítulo */
+.blog-container p {
+  font-size: .95rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Área de autor */
+.byline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: .85rem;
+  color: #888;
+}
+
+/* Avatar */
+.byline .avatar img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+/* Nombre autor */
+.byline .name {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Fecha y lectura */
+.byline time, .byline .read-time {
+  color: #777;
+  font-size: .8rem;
+}
+
+/* ===== Sección AppCenter ===== */
+#appcenter {
+  background: linear-gradient(135deg, #6a1bb4, #b44ee0);
+  padding: 90px 20px;
+  font-family: "Inter", system-ui, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+/* Wrapper para contenido + mockup */
+.app-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Imagen UI de AppCenter */
+.app-display__image {
+  width: 55%;
+  max-width: 600px;
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.app-display__image:hover {
+  transform: translateY(-6px);
+}
+
+/* Columna de texto */
+.app-display__description {
+  width: 40%;
+  max-width: 460px;
+  color: #fff;
+}
+
+/* Icono */
+.app-display__description img {
+  width: 90px;
+  margin-bottom: 20px;
+}
+
+/* Título */
+#appcenter h2 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Párrafo */
+#appcenter p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: rgba(255,255,255,0.85);
+}
+
+/* Contenedor de botones */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Botones estilo elementary */
+.button.flat {
+  background: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.35);
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: .95rem;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  transition: background .2s ease, border .2s ease;
+}
+
+.button.flat:hover {
+  background: rgba(255,255,255,0.25);
+  border-color: rgba(255,255,255,0.6);
+}
+
+
+/* ===== Responsive ===== */
+
+@media (max-width: 950px) {
+  .app-display {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .app-display__image,
+  .app-display__description {
+    width: 100%;
+    max-width: 600px;
+  }
+  .buttons {
+    align-items: center;
+  }
+  .button.flat {
+    width: 100%;
+    max-width: 380px;
+  }
+}
+/* ====== SECCIÓN PRODUCTIVIDAD Y DIVERSIÓN ====== */
+#workflow {
+  background: #fff;
+  padding: 80px 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+}
+
+/* TITULOS */
+#workflow h1 {
+  font-size: 2.6em;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+#workflow > .grid:first-of-type p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 760px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* CONTENEDOR PRINCIPAL DE LAS 3 COLUMNAS */
+#workflow .grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+/* CADA BLOQUE DE FUNCIONALIDAD */
+#workflow .third {
+  flex: 1 1 300px;
+  max-width: 340px;
+}
+
+/* IMÁGENES (capturas de pantalla) */
+#workflow figure {
+  margin: 0 0 15px 0;
+}
+
+#workflow .workspace {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#workflow .workspace img.window {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* TITULOS DE LAS FUNCIONES */
+#workflow h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* DESCRIPCIÓN */
+#workflow .third p {
+  font-size: 0.95em;
+  color: #555;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+/* NOTIFICACIONES (NO MOLESTAR) */
+#workflow .notification {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width: 52px;
+  height: 52px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#workflow .notification + .notification {
+  top: 90px;
+}
+
+#workflow .notification + .notification + .notification {
+  top: 160px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  #workflow .grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  #workflow .third {
+    max-width: 90%;
+  }
+}
+/* ======== SECCIÓN PARENTAL CONTROLS ======== */
+#parental-controls {
+  background: #fff;
+  color: #333;
+  padding: 100px 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  align-items: flex-start;
+  max-width: 1200px;
+}
+
+/* === IMAGEN DERECHA === */
+.app-display__image {
+  flex: 1 1 500px;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* === DESCRIPCIÓN IZQUIERDA === */
+.app-display__description {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.app-display__description h2 {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+
+.app-display__description h2 img {
+  width: 48px;
+  height: 48px;
+  background: #f6d46a;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+/* === SUBTÍTULOS (como Tiempo en pantalla, Uso de internet...) === */
+.app-display__description h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #333;
+  margin-top: 18px;
+}
+
+/* Íconos pequeños */
+.app-display__description svg {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+
+/* === PÁRRAFOS === */
+.app-display__description p {
+  margin-left: 26px;
+  color: #555;
+  line-height: 1.5;
+  font-size: 1.05em;
+  max-width: 500px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  #parental-controls {
+    padding: 60px 5%;
+  }
+
+  .app-display {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .app-display__image {
+    order: -1;
+    max-width: 90%;
+  }
+
+  .app-display__description h2 {
+    font-size: 1.8em;
+  }
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grid{
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  text-align: center;
+  margin: 50px;
+}
+.two-thirds{
+  align-items: center;
+  margin: 50px;
+}
+.two-thirds p{
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 40px;
+}
+.two-thirds h1{
+  font-size: 50px;
+}
+.read-more{
+  padding-top: 20px ;
+}
+.half{
+  text-align: center;
+  padding: 75px;
+}
+.half p{
+  padding: 20px;
+}
+a{
+  text-decoration: none;
+}
+.grid-grid{
+  background-color: rgb(247, 247, 247);
+}
+/* ========================================= */
+/* ====== SECCIÓN #shortcuts (Atajos de Teclado) ====== */
+/* ========================================= */
+
+#shortcuts {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 80px 5%; /* Padding vertical y horizontal */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Centrar el contenido dentro de la sección */
+}
+
+/* Wrapper principal del contenido (Imagen y Texto) */
+.app-display--horizontal {
+    display: flex;
+    align-items: center; /* Alinear verticalmente la imagen y el texto */
+    justify-content: space-between;
+    max-width: 1200px; /* Ancho máximo para el contenedor */
+    width: 100%;
+    gap: 60px; /* Espacio entre los dos elementos */
+}
+
+/* Columna de la Imagen */
+.app-display__image {
+    width: 55%; /* La imagen ocupa más espacio */
+    max-width: 600px;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la ventana */
+    border-radius: 6px; /* Bordes redondeados para la ventana de la aplicación */
+}
+
+/* Columna de la Descripción (Texto) */
+.app-display__description {
+    width: 40%; /* El texto ocupa menos espacio */
+    max-width: 480px;
+}
+
+/* Título principal */
+.app-display__description h1 {
+    font-size: 40px; /* Tamaño grande y destacado */
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: #333333; /* Color oscuro para el texto principal */
+}
+
+/* Párrafo */
+.app-display__description p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #555555;
+    margin: 0;
+}
+
+
+/* ========================================= */
+/* ====== MEDIA QUERIES (Responsive) ====== */
+/* ========================================= */
+@media (max-width: 900px) {
+    .app-display--horizontal {
+        flex-direction: column; /* Apilar la imagen y el texto en pantallas pequeñas */
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .app-display__image,
+    .app-display__description {
+        width: 100%; /* Ocupan todo el ancho disponible */
+        max-width: 650px; /* Limitar el ancho máximo */
+    }
+
+    .app-display__description h1 {
+        font-size: 32px;
+    }
+}
+/* --- Ajuste para la sección de Código Abierto (Fondo Blanco - Imagen 1) --- */
+
+section {
+    background-color: #ffffff; /* Asegura el fondo blanco */
+}
+
+section > .grid:first-child h1 {
+    font-size: 40px;
+    font-weight: 600; /* Usar un peso de fuente 600 o 700 para la negrita del título */
+    color: #fff;
+}
+
+/* Títulos de las 2 columnas inferiores */
+.grid:last-child h2 {
+    font-size: 28px;
+    font-weight: 500; /* Usar un peso de fuente más ligero para estos subtítulos */
+    color: #fff;
+    line-height: 1.2;
+}
+
+/* Párrafos de las 2 columnas inferiores */
+.grid:last-child p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+}
+#privacy{
+  background-color: #1e262f;
+  color: white;
+  padding-bottom: 25px;
+}
+/* ========================================= */
+/* ====== SECCIÓN DE DESCARGA (IMAGEN 2) ====== */
+/* ========================================= */
+
+/* --- Sección Superior (CTA) --- */
+
+.cta {
+    /* Asegurar el fondo blanco y el centrado */
+    background-color: #ffffff;
+    padding: 80px 20px 40px; /* Menos padding abajo para acercarlo a las reseñas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Título principal "Descargar elementary OS" */
+.cta h1 {
+    font-size: 40px; /* O un poco más grande si es necesario (44px) */
+    font-weight: 600; /* Seminegrita */
+    line-height: 1.1;
+    color: #333333; /* Texto oscuro */
+    margin: 20px 0 10px; /* Espacio debajo del ícono y arriba del párrafo */
+}
+
+/* Párrafo del eslogan */
+.cta p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555555; /* Gris oscuro */
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+/* Botón "Pague lo que pueda" */
+.cta .button.suggested-action {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #4a90e2; /* Azul brillante */
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.cta .button.suggested-action:hover {
+    background-color: #3a7bd2; /* Azul ligeramente más oscuro al pasar el ratón */
+}
+
+/* Ícono (Logotipo de elementary OS) */
+.cta img {
+    width: 64px; /* Ajusta el tamaño del ícono azul si el SVG original es más grande/pequeño */
+    height: 64px;
+    margin-bottom: 10px;
+}
+
+/* --- Sección Inferior (#the-press) - Reseñas --- */
+
+#the-press {
+    background-color: #ffffff; /* Asegurar fondo blanco */
+    padding: 50px 20px 100px; /* Espacio para el pie de página */
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Para que se ajusten en varias líneas */
+    justify-content: center; /* Centrar todas las columnas */
+    gap: 30px; /* Espacio entre los bloques */
+}
+
+#the-press .third {
+    flex: 1 1 280px; /* Base de 280px, crece y encoge */
+    max-width: 30%; /* Para 3 columnas en una fila ancha */
+    text-align: center;
+    margin-bottom: 30px; /* Espacio entre filas */
+    padding: 0 10px;
+    box-sizing: border-box; /* Incluir padding en el ancho */
+}
+
+/* Título de la reseña (Logos SVG) */
+#the-press .third a {
+    display: block; /* Para centrar el logo */
+    margin-bottom: 10px;
+}
+
+/* Ajuste del color de los SVGs (Si son monocolor) */
+/* El HTML original tiene el color en el path, por si acaso: */
+#the-press .third svg path {
+    fill: #555761; /* Asegura el color gris oscuro de los logos */
+}
+
+/* Texto de la reseña */
+#the-press .third {
+    font-size: 18px; /* Un tamaño de fuente que se ve consistente en la imagen */
+    line-height: 1.6;
+    color: #555555; /* Color del texto de la reseña */
+}
+
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 900px) {
+    #the-press .third {
+        max-width: 45%; /* 2 columnas */
+    }
+}
+
+@media (max-width: 600px) {
+    #the-press .third {
+        max-width: 100%; /* 1 columna */
+    }
+    .cta h1 {
+        font-size: 32px;
+    }
+}
